@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,12 @@
     </head>
 
     <body class="bg-[#231e30] font-grotesk">
-    <nav class="p-5 md:flex md:items-center md:justify-between">
-        <div class="flex justify-between items-center ">
-            <span class="text-2xl cursor-pointer">
-                <img class="h-10 inline" src="img/logo.png" alt="geniux-logo">
+
+    <nav class="p-5 md:flex md:items-center md:justify-between mb-24">
+        <div class="flex justify-between items-center">
+            <span class="cursor-pointer text-xl text-white">
+                <img class="h-10 inline" src="img/briefcase.png" alt="geniux-logo">
+                <span class="align-middle ml-2">Portfolio</span>
             </span>
     
             <span class="text-4xl cursor-pointer mx-2 md:hidden flex text-white">
@@ -24,7 +26,7 @@
             </span>
         </div>
     
-        <ul class="text-white text-right md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <ul class="text-white text-right md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
             <li class="mx-4 my-6 md:my-0">
                 <a href="#" class="text-xl hover:underline duration-500">About Me</a>
             </li>
@@ -36,13 +38,22 @@
             </li>
         </ul>
     </nav>
+
+    <section>
+        <img src="img/gray-laptop.webp" alt="gray-laptop" class="opacity-25">
+        <img src="./img/my-pic.png" alt="my-pic" class="bg-[#2c2640] h-[12rem] rounded-full absolute inset-x-0 mx-auto top-20">
+        <div class="text-white text-center absolute w-full top-80">
+            <h3 class="text-xl">Hi! I'm</h3>
+            <h1 class="text-2xl font-bold">JUAN DAVID GRANADILLO</h1>
+            <h4 class="text-[#006dc8] text-xl">Web Designer</h4>
+        </div>
+    </section>
     
-    
-        <script>
+    <script>
         function Menu(e){
             let list = document.querySelector('ul');
             e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
         }
-        </script>
+    </script>
     </body>
 </html>
