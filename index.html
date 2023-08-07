@@ -31,13 +31,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
 
   <body class="bg-[#231e30] font-grotesk">
-    <nav class="p-5 md:flex md:items-center md:justify-between mb-32">
+    <!-- NAV -->
+    <nav
+      class="p-5 md:flex md:items-center md:justify-between mb-40 sticky top-0 z-30 bg-black/20"
+    >
       <div class="flex justify-between items-center">
         <span class="cursor-pointer text-xl text-white">
-          <img class="h-10 inline" src="img/briefcase.png" alt="geniux-logo" />
+          <img
+            class="h-10 inline"
+            src="img/briefcase.png"
+            alt="briefcase-logo"
+          />
           <span class="align-middle ml-2">Portfolio</span>
         </span>
 
@@ -47,7 +59,7 @@
       </div>
 
       <ul
-        class="text-white text-right md:flex md:items-center z-20 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        class="text-white md:bg-transparent bg-black/20 text-right md:flex md:items-center z-20 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
       >
         <li class="mx-4 my-6 md:my-0">
           <a href="#about-me" class="text-xl hover:underline duration-500"
@@ -67,6 +79,7 @@
       </ul>
     </nav>
 
+    <!-- PRESENTATION -->
     <section class="min-h-[50vh] flex justify-center relative">
       <div
         class="bg-[url('img/gray-laptop.png')] h-full bg-cover w-full absolute opacity-20"
@@ -75,18 +88,22 @@
         <img
           src="./img/my-pic.png"
           alt="my-pic"
-          class="bg-[#2c2640] h-[11rem] rounded-full inset-x-0 mx-auto top-[6rem]"
+          class="bg-[#2c2640] h-48 md:h-56 rounded-full mx-auto md:mb-4"
         />
         <div class="text-white text-center w-full top-80 pt-4">
-          <h3 class="text-lg">Hi! I'm</h3>
-          <h1 class="text-xl font-bold">JUAN DAVID GRANADILLO</h1>
-          <h4 class="text-purple-300 text-xl font-bold">Web Designer</h4>
-          <h4 class="text-purple-300">1 year of experience</h4>
-          <div class="w-full flex justify-center items-center my-2">
+          <h2 class="text-lg md:text-2xl">Hi! I'm</h2>
+          <h1 class="text-xl md:text-4xl font-bold">JUAN DAVID GRANADILLO</h1>
+          <h2 class="text-purple-300 text-xl md:text-4xl font-bold">
+            Web Designer
+          </h2>
+          <h3 class="text-purple-300 md:text-2xl md:mb-6">
+            +1 year of experience
+          </h4>
+          <div class="w-full flex justify-center items-center my-2 mb-6 md:text-2xl">
             <button
               type="button"
-              onclick=" location.href='#'"
-              class="border-[1px] border-purple-600 hover:bg-sky-400/25 rounded-sm py-1 px-5 text-white w-24"
+              onclick="location.href='#'"
+              class="border-[2px] border-purple-600 hover:bg-purple-600/25 rounded-xl py-1 px-5 md:py-4 md:px-10 text-white w-24 md:w-36"
             >
               CV
             </button>
@@ -95,22 +112,24 @@
       </div>
     </section>
 
-    <section class="min-h-[20vh] flex flex-col gap-5 p-4" id="about-me">
+    <!-- ABOUT ME SECTION -->
+    <section class="min-h-[20vh] flex flex-col gap-5 p-8" id="about-me">
       <div
         class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg"
       ></div>
-      <div class="text-white">
-        <h2 class="pb-4 text-2xl font-bold">About me</h2>
-        <p>
+      <div class="text-white md:px-10 md:py-10">
+        <h2 class="pb-4 text-2xl md:text-4xl font-bold">About me</h2>
+        <p class="md:text-2xl md:text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
           aspernatur natus placeat quidem qui dignissimos ullam, ipsum vitae.
           Quo minima delectus eum pariatur harum voluptas quia ex exercitationem
-          voluptate libero.
+          voluptate libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore magnam fugiat facilis odio, quibusdam eaque reiciendis minima nemo veritatis, impedit commodi debitis vero iusto magni distinctio aliquid, nulla ex beatae.
         </p>
       </div>
     </section>
 
-    <section class="min-h-[50vh] flex flex-col gap-5 py-4">
+    <!-- TECHNOLOGIES SECTION -->
+    <section class="flex flex-col gap-5 py-8">
       <div
         class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg ml-4"
       ></div>
@@ -118,18 +137,18 @@
         <div
           class="bg-[url('img/ux-banner.png')] h-full bg-cover w-full absolute"
         ></div>
-        <div class="z-10">
-          <div class="text-white w-full p-4">
-            <h2 class="text-2xl font-bold text-start">Technologies</h2>
-            <div class="pl-4 flex flex-col gap-y-2 py-2">
-              <h3 class="text-xl font-bold">Front-end</h3>
-              <ul>
+        <div class="z-10 my-5 md:my-10">
+          <div class="text-white w-full p-4 px-8 md:px-20">
+            <h2 class="text-2xl md:text-4xl font-bold text-start">Technologies</h2>
+            <div class="pl-4 flex flex-col gap-y-2 py-4">
+              <h3 class="text-xl md:text-3xl font-bold text-sky-200">Front-end</h3>
+              <ul class="md:text-2xl flex flex-col gap-2">
                 <li><i class="devicon-html5-plain"></i> HTML</li>
                 <li><i class="devicon-css3-plain"></i> CSS</li>
                 <li><i class="devicon-javascript-plain"></i> JavaScript</li>
               </ul>
-              <h3 class="text-xl font-bold">Design</h3>
-              <ul>
+              <h3 class="text-xl md:text-3xl font-bold text-sky-200">Design</h3>
+              <ul class="md:text-2xl">
                 <li><i class="devicon-xd-plain"></i> Adobe XD</li>
               </ul>
             </div>
@@ -138,129 +157,30 @@
       </div>
     </section>
 
+    <!-- PROJECTS SECTION -->
     <div
       class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg ml-4"
     ></div>
-    <section class="min-h-[30vh] flex flex-col p-4" id="projects">
-      <h4 class="text-2xl text-white pb-4 font-bold">Projects</h4>
-      <div
-        id="indicators-carousel"
-        class="relative w-3/4 mx-auto"
-        data-carousel="static"
-      >
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <!-- Item 1 -->
-          <div class="duration-700 ease-in-out" data-carousel-item="active">
-            <img
-              src="img/img1.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="img/img2.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="img/img3.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
+    <section class="min-h-[30vh] flex flex-col p-8 md:px-20" id="projects">
+      <h3 class="text-2xl md:text-4xl text-white pb-4 font-bold">Projects</h3>
+      <div class="carousel carousel-center h-[50vh] p-4 space-x-5 md:space-x-20 rounded-box md:w-3/4 mx-auto">
+        <div class="carousel-item h-full" onclick="location.href='#'">
+          <img src="img/img1.jpg" class="rounded-box" />
+        </div> 
+        <div class="carousel-item h-full" onclick="location.href='#'">
+          <img src="img/img2.jpg" class="rounded-box" />
+        </div> 
+        <div class="carousel-item h-full" onclick="location.href='#'">
+          <img src="img/img3.jpg" class="rounded-box" />
         </div>
-        <!-- Slider indicators -->
-        <div
-          class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
-        >
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full bg-white"
-            aria-current="true"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full bg-white"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full bg-white"
-            aria-current="false"
-            aria-label="Slide 3"
-            data-carousel-slide-to="2"
-          ></button>
-        </div>
-        <!-- Slider controls -->
-        <button
-          type="button"
-          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-4 h-4 text-white dark:text-white-800"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-white-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-4 h-4 text-white dark:text-white-800"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
       </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <div
       class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg ml-4"
     ></div>
-    <section
+    <form
       class="bg-blue-950/40 p-8 m-5 rounded-xl text-center min-h-[60vh]"
       id="contact"
     >
@@ -294,6 +214,7 @@
               id="website-admin"
               class="rounded-none rounded-r-lg bg-gray-300 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5"
               placeholder="John Doe"
+              required
             />
           </div>
         </div>
@@ -355,8 +276,9 @@
           </button>
         </div>
       </div>
-    </section>
+    </form>
 
+    <!-- FOOTER -->
     <hr class="my-4" />
     <footer class="py-5">
       <div class="flex justify-center flex-col items-center text-white">
