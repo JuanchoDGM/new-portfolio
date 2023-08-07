@@ -50,13 +50,19 @@
         class="text-white text-right md:flex md:items-center z-20 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
       >
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:underline duration-500">About Me</a>
+          <a href="#about-me" class="text-xl hover:underline duration-500"
+            >About Me</a
+          >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:underline duration-500">Projects</a>
+          <a href="#projects" class="text-xl hover:underline duration-500"
+            >Projects</a
+          >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:underline duration-500">Contact</a>
+          <a href="#contact" class="text-xl hover:underline duration-500"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
@@ -89,12 +95,12 @@
       </div>
     </section>
 
-    <section class="min-h-[20vh] flex flex-col gap-5 p-4">
+    <section class="min-h-[20vh] flex flex-col gap-5 p-4" id="about-me">
       <div
         class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg"
       ></div>
       <div class="text-white">
-        <h2 class="pb-4 text-2xl">About me</h2>
+        <h2 class="pb-4 text-2xl font-bold">About me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
           aspernatur natus placeat quidem qui dignissimos ullam, ipsum vitae.
@@ -135,10 +141,11 @@
     <div
       class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg ml-4"
     ></div>
-    <section class="min-h-[30vh] flex justify-center my-4">
+    <section class="min-h-[30vh] flex flex-col p-4" id="projects">
+      <h4 class="text-2xl text-white pb-4 font-bold">Projects</h4>
       <div
         id="indicators-carousel"
-        class="relative w-3/4"
+        class="relative w-3/4 mx-auto"
         data-carousel="static"
       >
         <!-- Carousel wrapper -->
@@ -253,7 +260,10 @@
     <div
       class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg ml-4"
     ></div>
-    <section class="bg-blue-950/40 p-8 m-5 rounded-xl text-center">
+    <section
+      class="bg-blue-950/40 p-8 m-5 rounded-xl text-center min-h-[60vh]"
+      id="contact"
+    >
       <h4 class="text-xl text-white">Contact</h4>
       <img src="img/contact.png" alt="contact" class="w-full" />
       <div class="bg-white p-4 rounded-xl text-left">
