@@ -3,37 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet"/>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#006dc8",
-            },
-            fontFamily: {
-              grotesk: ["Space Grotesk", "sans-serif"],
-            }
-          }
-        }
-      }
-    </script>
-    <!-- Favicon -->
+    <link href="src/output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/briefcase.png" type="image/x-icon" />
-    <!-- DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css"/>
-    <!-- Flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
-    <title>Web Designer Portfolio - Juan Granadillo</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Web Developer Portfolio - Juan Granadillo</title>
+    <script src="main.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
   </head>
 
   <body class="bg-[#231e30] font-grotesk">
@@ -60,17 +42,17 @@
         class="text-white md:bg-transparent bg-black/20 text-right md:flex md:items-center z-20 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
       >
         <li class="mx-4 my-6 md:my-0">
-          <a href="#about-me" class="text-xl hover:text-purple-300 duration-500"
+          <a href="#about-me" class="text-xl hover:underline duration-500"
             >About Me</a
           >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#projects" class="text-xl hover:text-purple-300 duration-500"
+          <a href="#projects" class="text-xl hover:underline duration-500"
             >Projects</a
           >
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#contact" class="text-xl hover:text-purple-300 duration-500"
+          <a href="#contact" class="text-xl hover:underline duration-500"
             >Contact</a
           >
         </li>
@@ -97,14 +79,10 @@
           <h3 class="text-purple-300 md:text-2xl md:mb-6">
             +1 year of experience
           </h4>
-          <div class="w-full flex justify-center items-center my-2 mb-6 md:text-2xl text-purple-400">
-            <button
-              type="button"
-              onclick="location.href='#'"
-              class="border-[2px] border-purple-600 hover:bg-purple-600/25 rounded-xl py-1 px-5 md:py-4 md:px-10 text-white w-24 md:w-36 font-bold"
-            >
+          <div class="w-full flex justify-center items-center my-2 mb-6 md:text-2xl">
+            <a href="#" class="border-[2px] font-bold border-purple-600 hover:bg-purple-400/25 rounded-xl py-1 px-5 md:py-4 md:px-10 w-24 md:w-36 text-purple-200">
               CV
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -141,9 +119,9 @@
             <div class="pl-4 flex flex-col gap-y-2 py-4">
               <h3 class="text-xl md:text-3xl font-bold text-sky-200">Front-end</h3>
               <ul class="md:text-2xl flex flex-col gap-2">
-                <li><ion-icon name="logo-html5"></ion-icon> HTML</li>
-                <li><ion-icon name="logo-css3"></ion-icon> CSS</li>
-                <li><ion-icon name="logo-javascript"></ion-icon> JavaScript</li>
+                <li><i class="devicon-html5-plain"></i> HTML</li>
+                <li><i class="devicon-css3-plain"></i> CSS</li>
+                <li><i class="devicon-javascript-plain"></i> JavaScript</li>
               </ul>
               <h3 class="text-xl md:text-3xl font-bold text-sky-200">Design</h3>
               <ul class="md:text-2xl">
@@ -162,7 +140,7 @@
     <section class="min-h-[30vh] flex flex-col p-8 md:px-20" id="projects">
       <h3 class="text-2xl md:text-4xl text-white pb-4 font-bold">Projects</h3>
 
-      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+      <div id="default-carousel" class="relative w-full" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <!-- Item 1 -->
@@ -186,16 +164,16 @@
         </div>
         <!-- Slider controls -->
         <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-purple-400 group-hover:bg-white/50 dark:group-hover:bg-purple-400/40 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-purple-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-purple-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 group-hover:bg-purple-400/40 group-focus:ring-4 group-focus:ring-purple-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-purple-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                 </svg>
                 <span class="sr-only">Previous</span>
             </span>
         </button>
         <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-purple-400 group-hover:bg-white/50 dark:group-hover:bg-purple-400/40 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-purple-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-purple-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 group-hover:bg-purple-400/40 group-focus:ring-4 group-focus:ring-purple-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-purple-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                 </svg>
                 <span class="sr-only">Next</span>
@@ -312,18 +290,15 @@
     <footer class="py-5">
       <div class="flex justify-center flex-col items-center text-white">
         <div class="flex gap-x-4 text-2xl mb-3">
-          <span onclick="location.href='#'">
+          <button type="button">
             <i class="devicon-github-original hover:text-purple-600"></i>
-          </span>
-          <span onclick="location.href='#'">
+          </button>
+          <button type="button">
             <i class="devicon-linkedin-plain hover:text-purple-600"></i>
-          </span>
-          <span onclick="location.href='#'">
+          </button>
+          <button type="button">
             <i class="devicon-facebook-plain hover:text-purple-600"></i>
-          </span>
-          <span onclick="location.href='#'">
-            <ion-icon name="mail-outline" class="hover:text-purple-600"></ion-icon>
-          </span>
+          </button>
         </div>
         <div>
           Developed by
@@ -345,7 +320,6 @@
             list.classList.remove("opacity-100"));
       }
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
   </body>
 </html>
