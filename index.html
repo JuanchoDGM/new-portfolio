@@ -20,9 +20,7 @@
 
   <body class="bg-[#231e30] font-grotesk">
     <!-- NAV -->
-    <nav
-      class="p-5 md:flex md:items-center md:justify-between mb-40 sticky top-0 z-30 bg-black/20"
-    >
+    <nav class="p-5 md:flex md:items-center md:justify-between mb-40 sticky top-0 z-50 bg-black/20">
       <div class="flex justify-between items-center">
         <span class="cursor-pointer text-xl text-white">
           <img
@@ -39,7 +37,7 @@
       </div>
 
       <ul
-        class="text-white md:bg-transparent bg-black/20 text-right md:flex md:items-center z-20 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        class="text-white md:bg-transparent bg-black/20 text-right md:flex md:items-center z-50 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
       >
         <li class="mx-4 my-6 md:my-0">
           <a href="#about-me" class="text-xl hover:underline duration-500"
@@ -137,7 +135,7 @@
     <div
       class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg ml-4"
     ></div>
-    <section class="min-h-[30vh] flex flex-col p-8 md:px-20" id="projects">
+    <section class="min-h-[30vh] flex flex-col p-8 md:px-20 z-10" id="projects">
       <h3 class="text-2xl md:text-4xl text-white pb-4 font-bold">Projects</h3>
 
       <div id="default-carousel" class="relative w-full" data-carousel="static">
@@ -187,10 +185,7 @@
     <div
       class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg ml-4"
     ></div>
-    <form
-      class="bg-blue-950/40 p-8 m-5 rounded-xl text-center min-h-[60vh]"
-      id="contact"
-    >
+    <form action="https://formsubmit.co/jdgranadillo9@gmail.com" method="POST" class="bg-blue-950/40 p-8 m-5 rounded-xl text-center min-h-[60vh]" id="contact">
       <h4 class="text-xl text-white">Contact</h4>
       <img src="img/contact.png" alt="contact" class="w-full" />
       <div class="bg-white p-4 rounded-xl text-left">
@@ -216,26 +211,14 @@
                 />
               </svg>
             </span>
-            <input
-              type="text"
-              id="website-admin"
-              class="rounded-none rounded-r-lg bg-gray-300 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5"
-              placeholder="John Doe"
-              required
-            />
+            <input type="text" name="website-admin" id="website-admin" class="rounded-none rounded-r-lg bg-gray-300 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="John Doe" required/>
           </div>
         </div>
 
         <div class="pb-4">
-          <label
-            for="email-address-icon"
-            class="block mb-2 text-sm font-bold text-gray-900"
-            >Email</label
-          >
+          <label for="email-address-icon" class="block mb-2 text-sm font-bold text-gray-900">Email</label>
           <div class="relative">
-            <div
-              class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
-            >
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
               <svg
                 class="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"
@@ -251,12 +234,7 @@
                 />
               </svg>
             </div>
-            <input
-              type="text"
-              id="email-address-icon"
-              class="bg-gray-300 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
-              placeholder="name@example.com"
-            />
+            <input type="text" name="email-address-icon" id="email-address-icon" class="bg-gray-300 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="name@example.com" required/>
           </div>
         </div>
 
@@ -266,23 +244,17 @@
             class="block mb-2 text-sm font-bold text-gray-900"
             >Message</label
           >
-          <textarea
-            id="message"
-            rows="4"
-            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-300 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Leave a comment..."
-          ></textarea>
+          <textarea name="message" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-300 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..." required></textarea>
         </div>
 
         <div>
-          <button
-            type="submit"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Submit
-          </button>
+          <input type="submit" value="Submit" class="text-white bg-purple-600 hover:bg-purple-400 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"></input>
         </div>
       </div>
+      
+      <input type="hidden" name="_next" value="https://juanchodgm.github.io/new-portfolio/">
+      <input type="hidden" name="_captcha" value="false">
+
     </form>
 
     <!-- FOOTER -->
