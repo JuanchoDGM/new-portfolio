@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICONS -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <!-- TAILWIND -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet"/>
     <link href="src/output.css" rel="stylesheet" />
+    <!--  -->
     <link rel="shortcut icon" href="img/briefcase.png" type="image/x-icon" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Web Developer Portfolio - Juan Granadillo</title>
-    <script src="main.js" defer></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet"/>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+    <title>Web Developer Portfolio - Juan Granadillo</title>
   </head>
 
   <body class="bg-[#231e30] font-grotesk">
@@ -35,24 +38,16 @@
           <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
         </span>
       </div>
-
-      <ul
-        class="text-white md:bg-transparent bg-black/20 text-right md:flex md:items-center z-50 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
-      >
+      
+      <ul class="text-white md:bg-transparent bg-black/20 text-right md:flex md:items-center z-50 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pr-7 opacity-0 md:opacity-100 top-[-400px] transition-all ease-in duration-500">
         <li class="mx-4 my-6 md:my-0">
-          <a href="#about-me" class="text-xl hover:underline duration-500"
-            >About Me</a
-          >
+          <a href="#about-me" class="text-xl hover:underline duration-500">About Me</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#projects" class="text-xl hover:underline duration-500"
-            >Projects</a
-          >
+          <a href="#projects" class="text-xl hover:underline duration-500">Projects</a>
         </li>
         <li class="mx-4 my-6 md:my-0">
-          <a href="#contact" class="text-xl hover:underline duration-500"
-            >Contact</a
-          >
+          <a href="#contact" class="text-xl hover:underline duration-500">Contact</a>
         </li>
       </ul>
     </nav>
@@ -60,7 +55,7 @@
     <!-- PRESENTATION -->
     <section class="min-h-[50vh] flex justify-center relative">
       <div
-        class="bg-[url('img/gray-laptop.png')] h-full bg-cover w-full absolute opacity-20"
+        class="bg-[url('../img/gray-laptop.png')] h-full bg-cover w-full absolute opacity-20"
       ></div>
       <div class="mt-[-100px] z-10">
         <img
@@ -77,8 +72,8 @@
           <h3 class="text-purple-300 md:text-2xl md:mb-6">
             +1 year of experience
           </h4>
-          <div class="w-full flex justify-center items-center my-2 mb-6 md:text-2xl">
-            <a href="#" class="border-[2px] font-bold border-purple-600 hover:bg-purple-400/25 rounded-xl py-1 px-5 md:py-4 md:px-10 w-24 md:w-36 text-purple-200">
+          <div class="w-full flex justify-center items-center my-10 md:text-2xl">
+            <a href="https://drive.google.com/file/d/1fy7CEjLIwfzn9H-EF-FrNtDbAh25ONvJ/view?usp=sharing" class="border-[2px] font-bold border-purple-600 hover:bg-purple-400/25 rounded-xl py-2 px-5 md:py-4 w-[40%] md:w-2/4 text-purple-200">
               CV
             </a>
           </div>
@@ -109,7 +104,7 @@
       ></div>
       <div class="flex justify-start relative">
         <div
-          class="bg-[url('img/ux-banner.png')] h-full bg-cover w-full absolute"
+          class="bg-[url('../img/ux-banner.png')] h-full bg-cover w-full absolute"
         ></div>
         <div class="z-10 my-5 md:my-10">
           <div class="text-white w-full p-4 px-8 md:px-20">
@@ -185,19 +180,21 @@
     <div
       class="h-1 w-[100px] bg-gradient-to-r from-sky-500 to-purple-600 rounded-lg ml-4"
     ></div>
-    <form action="https://formsubmit.co/jdgranadillo9@gmail.com" method="POST" class="bg-blue-950/40 p-8 m-5 rounded-xl text-center min-h-[60vh]" id="contact">
-      <h4 class="text-xl text-white">Contact</h4>
-      <img src="img/contact.png" alt="contact" class="w-full" />
-      <div class="bg-white p-4 rounded-xl text-left">
+    <form action="https://formsubmit.co/jdgranadillo9@gmail.com" method="POST" class="bg-blue-950/40 p-6 md:p-8 m-6 md:m-8 rounded-xl min-h-[60vh] md:flex md:mx-20 md:min-h-[100vh] md:relative md:px-10" id="contact">
+      <div class="md:flex md:flex-col md:justify-center md:gap-10">
+        <h3 class="text-2xl md:text-4xl md:ml-8 font-bold text-white">Contact</h3>
+        <img src="img/contact.png" alt="contact" class="py-8 w-full md:w-2/4 lg:w-3/4 xl:w-full" />
+      </div>
+      <div class="bg-white p-4 rounded-2xl text-left md:w-2/4 md:absolute md:-right-12 md:h-[90%]">
         <div class="pb-4">
           <label
             for="website-admin"
-            class="block mb-2 text-sm font-bold text-gray-900"
+            class="block mb-2 text-sm md:text-lg font-bold text-gray-900"
             >Username</label
           >
           <div class="flex">
             <span
-              class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-300 border border-r-0 border-gray-300 rounded-l-md"
+              class="inline-flex items-center px-3 text-sm md:text-lg text-gray-900 bg-gray-300 border border-r-0 border-gray-300 rounded-l-md"
             >
               <svg
                 class="w-4 h-4 text-gray-500 dark:text-gray-400"
@@ -211,12 +208,12 @@
                 />
               </svg>
             </span>
-            <input type="text" name="website-admin" id="website-admin" class="rounded-none rounded-r-lg bg-gray-300 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5" placeholder="John Doe" required/>
+            <input type="text" name="website-admin" id="website-admin" class="rounded-none rounded-r-lg bg-gray-300 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm md:text-lg p-2.5" placeholder="John Doe" required/>
           </div>
         </div>
 
         <div class="pb-4">
-          <label for="email-address-icon" class="block mb-2 text-sm font-bold text-gray-900">Email</label>
+          <label for="email-address-icon" class="block mb-2 text-sm md:text-lg font-bold text-gray-900">Email</label>
           <div class="relative">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
               <svg
@@ -234,21 +231,21 @@
                 />
               </svg>
             </div>
-            <input type="text" name="email-address-icon" id="email-address-icon" class="bg-gray-300 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="name@example.com" required/>
+            <input type="text" name="email-address-icon" id="email-address-icon" class="bg-gray-300 border border-gray-300 text-gray-900 text-sm md:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="name@example.com" required/>
           </div>
         </div>
 
         <div class="pb-4">
           <label
             for="message"
-            class="block mb-2 text-sm font-bold text-gray-900"
+            class="block mb-2 text-sm md:text-lg font-bold text-gray-900"
             >Message</label
           >
-          <textarea name="message" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-300 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..." required></textarea>
+          <textarea name="message" id="message" rows="4" class="block p-2.5 w-full text-sm md:text-lg text-gray-900 bg-gray-300 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..." required></textarea>
         </div>
 
         <div>
-          <input type="submit" value="Submit" class="text-white bg-purple-600 hover:bg-purple-400 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"></input>
+          <input type="submit" value="Submit" class="md:text-lg text-white bg-purple-600 hover:bg-purple-400 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"></input>
         </div>
       </div>
       
@@ -259,9 +256,9 @@
 
     <!-- FOOTER -->
     <hr class="my-4" />
-    <footer class="py-5">
+    <footer class="py-5 md:text-2xl md:py-10">
       <div class="flex justify-center flex-col items-center text-white">
-        <div class="flex gap-x-4 text-2xl mb-3">
+        <div class="flex gap-x-4 text-2xl md:text-4xl mb-3">
           <button type="button">
             <i class="devicon-github-original hover:text-purple-600"></i>
           </button>
